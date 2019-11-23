@@ -1,0 +1,40 @@
+:root {
+  --blue: #007bff;
+  --blue-light: #c2e9fb;
+  --purple: #6f42c1;
+  --pink: #fad0c4;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #f6d365;
+  --green: #28a745;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-light: #ececec;
+  --gray-dark: #343a40;
+  --light: #f8f9fa;
+  --dark: #263238;
+}
+
+.container {
+  background-color: var(--white);
+}
+
+.header {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--pink); 
+}
+
+.page-title {
+  /* 垂直水平居中对齐 */
+  margin: auto;
+}
+
+.section {
+  display: flex;
+  height: 300px;
+}
+
+.intro-title {
+  margin: auto;
+}

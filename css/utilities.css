@@ -1,0 +1,55 @@
+/* Github corner utilities */
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+
+.github-icon {
+  fill: var(--dark);
+  color: var(--pink);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Background */
+.bg-dark {
+  background-color: #263238;
+  color: #f8f9fa;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+  color: #263238;
+}
+
+/* Create block formatting context*/
+.bfc {
+  display: inline-block;
+}

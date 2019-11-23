@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #263238;
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+dt { font-weight: 700; }
+
+dd {
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+}
+
+a { text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+input,
+button,
+textarea,
+select,
+optgroup {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
