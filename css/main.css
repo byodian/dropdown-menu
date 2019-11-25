@@ -25,16 +25,138 @@
   background-color: var(--pink); 
 }
 
-.page-title {
+.page-title, 
+.intro-title {
   /* 垂直水平居中对齐 */
   margin: auto;
 }
 
 .section {
   display: flex;
+}
+
+.section--intro {
   height: 300px;
 }
 
-.intro-title {
-  margin: auto;
+.section--1 {
+  height: 400px;  
+  align-items: center;
+  flex-direction: column; 
+}
+
+.navbar {
+  width: 100%;
+  padding: 0 80px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 58px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.navbar__menu,
+.nav__list, 
+.nav__item {
+  height: 100%;
+}
+
+.navbar__brand {
+  padding: 0 20px;
+}
+
+.navbar__brand svg {
+  /* Remove the space between inline-block */
+  display: block;
+  width: 14vw;
+}
+
+.navbar__brand svg path {
+  fill: var(--orange);
+}
+
+/* Navbar list styles*/
+.nav__list {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.nav__item {
+  padding: 5px 0;
+  overflow: hidden;
+}
+
+.nav__item:hover {
+  overflow: visible;
+}
+
+.nav__item:hover .dropdown {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav__item:hover button svg {
+  transform: rotate(180deg);
+}
+
+.nav__item a:hover {
+  background-color: var(--gray-light);
+  border-radius: 2px; 
+}
+
+.nav__link,
+.nav__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.nav__item button svg {
+  transition: .2s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.nav__button--search {
+  padding: 0 10px;
+}
+
+/* Containing block of dropdown element*/
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  min-width: 200px;
+  background-color: var(--light);
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.1);
+  transition: .2s ease-out;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.dropdown--wide {
+  min-width: 300px;
+}
+
+.dropdown__list__title {
+  padding: 15px 15px 0 15px;
+  margin: 0;
+  color: var(--orange);
+}
+
+.dropdown__list {
+  padding: 0;
+  padding: 10px;
+}
+
+.dropdown__item a {
+  display: block;
+  padding: 10px 20px;
 }

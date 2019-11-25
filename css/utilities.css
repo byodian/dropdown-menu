@@ -5,29 +5,19 @@
 
 @keyframes octocat-wave {
   0%,
-  100% {
-    transform: rotate(0);
-  }
+  100% { transform: rotate(0); }
 
   20%,
-  60% {
-    transform: rotate(-25deg);
-  }
+  60% { transform: rotate(-25deg); }
 
   40%,
-  80% {
-    transform: rotate(10deg);
-  }
+  80% { transform: rotate(10deg); }
 }
 
 @media (max-width:500px) {
-  .github-corner:hover .octo-arm {
-    animation: none;
-  }
+  .github-corner:hover .octo-arm { animation: none; }
 
-  .github-corner .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
+  .github-corner .octo-arm { animation: octocat-wave 560ms ease-in-out; }
 }
 
 .github-icon {
@@ -50,6 +40,34 @@
 }
 
 /* Create block formatting context*/
-.bfc {
-  display: inline-block;
+.bfc { display: inline-block; }
+
+/* Margin */
+.mb-small { margin-bottom: 1rem !important; }
+
+.mb-regular { margin-bottom: 1.5rem !important; }
+
+.mb-medium { margin-bottom: 2rem !important; }
+
+.mb-large { margin-bottom: 2.5rem !important; }
+
+.my-large {
+  margin-bottom: 2.5rem !important;
+  margin-top: 2.5rem !important;
+}
+
+.my-medium {
+  margin-bottom: 2rem !important;
+  margin-top: 2rem !important;
+}
+
+
+/* Button */
+.btn {
+  background-color: transparent;
+  border: none;
+}
+
+.btn:focus {
+  outline: none;
 }
