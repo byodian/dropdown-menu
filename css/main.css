@@ -95,11 +95,11 @@
   transform: rotate(180deg);
 }
 
-.nav__item a {
+.nav__item > a {
   position: relative;
 }
 
-.nav__item a::after {
+.nav__item > a::after {
   content: "";
   position: absolute;
   /* top: 100%; */
@@ -112,7 +112,7 @@
   transition: .2s ease-in-out;
 }
 
-.nav__item a:hover::after {
+.nav__item > a:hover::after {
   transform: scaleX(1);
 }
 
@@ -168,6 +168,10 @@
 .dropdown__item a {
   display: block;
   padding: 1rem 1.5rem;
+}
+
+.dropdown__item a:hover {
+  background-color: var(--gray-light);
 }
 
 /* Section 2 */
