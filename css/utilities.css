@@ -39,6 +39,10 @@
   color: #263238;
 }
 
+.text-light {
+  color: #f8f9fa;
+}
+
 /* Create block formatting context*/
 .bfc { display: inline-block; }
 
@@ -50,6 +54,14 @@
 .mb-medium { margin-bottom: 2rem !important; }
 
 .mb-large { margin-bottom: 2.5rem !important; }
+
+.ml-small { margin-left: 1rem !important; }
+
+.ml-regular { margin-left: 1.5rem !important; }
+
+.ml-medium { margin-left: 2rem !important; }
+
+.ml-large { margin-left: 2.5rem !important; }
 
 .my-large {
   margin-bottom: 2.5rem !important;
